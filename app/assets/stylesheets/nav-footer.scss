@@ -1,0 +1,33 @@
+@import 'colors';
+
+/**************** NAV/FOOTER ****************/
+
+nav, 
+.footer-copyright {
+  background-color: $dk-gray !important;
+}
+
+.page-footer {
+  background-color: $md-gray !important;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: $lt-gray;
+}
+
+nav ul a:hover {
+  color: $coral;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: $lt-gray;
+}
+
+.button-collapse:hover {
+  color: $coral;
+}

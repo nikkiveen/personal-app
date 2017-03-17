@@ -1,0 +1,53 @@
+@import 'colors';
+
+/**************** PARALLAX PAGE HEADER ****************/
+.parallax-container {
+  min-height: 403px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+#title-box h1 {
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.section-banner .title {
+  padding: 50px 0;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+  #title-box h1 {
+    font-size: 3rem;
+  }
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+.section-banner .title {
+  color: $lt-gray;
+}
+
+#title-box {
+  margin-top: 90px;
+  width: 40%;
+  padding: 10px;
+  background-color: rgba(240, 240, 240, .5);
+}

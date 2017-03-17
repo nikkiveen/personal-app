@@ -6,9 +6,34 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Lato:900|Limelight" rel="stylesheet">
   </head>
 
   <body>
-    <%= yield %>
+    <nav role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#projects">Projects</a></li>        
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+    <main>
+      <%= yield %>
+    </main>
+    <footer class="center page-footer">
+      <div class="footer-copyright">
+        <div class="container">
+        Nikki Veen © 2017 
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

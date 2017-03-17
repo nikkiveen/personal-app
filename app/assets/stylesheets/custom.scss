@@ -6,3 +6,15 @@ html {
 .title {
   font-family: 'Limelight', cursive;
 }
+
+/**************** STICKY FOOTER ****************/
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: rgb(240, 240, 240);
+}
+
+main {
+  flex: 1 0 auto;
+}

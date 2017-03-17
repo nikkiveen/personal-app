@@ -31,3 +31,7 @@ p {
 .button-collapse:hover {
   color: $coral;
 }
+
+#sidenav-overlay {
+  z-index: 996 !important;
+}

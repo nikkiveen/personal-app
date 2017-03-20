@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get '/resume' => 'pages#resume'
   get '/projects' => 'pages#projects'
   get '/contact' => 'pages#contact'
+  post '/contact' => 'pages#message'
 end

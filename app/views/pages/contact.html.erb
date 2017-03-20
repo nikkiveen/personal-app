@@ -1,0 +1,72 @@
+<div id="contact-banner" class="parallax-container">
+  <div class="section no-pad-bot">
+    <div class="container" id="title-box">
+      <h1 class="flow-text title header center black-text">CONTACT</h1>
+    </div>
+  </div>
+  <div class="parallax"><img src="<%= image_path('background.jpg') %>" alt="background image"></div>
+</div>
+
+<div id="contact" class="row container">
+  <div class="col s12 m6 push-m6 l6 push-l6">
+    <div class="row">
+      <div class="col s12">
+        <div class="card-panel">
+          <span class="center">
+            <div class="section">
+              <h4 class="name">Nikki Veen</h4>
+              <h5><i class="fa fa-map-marker" aria-hidden="true"></i> Chicago, IL</h5>
+            </div>
+            <div class="divider"></div>
+            <div class="section contact-links">
+              <h5><a href="https://github.com/nikkiveen"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></h5>
+              <h5><a href="https://www.linkedin.com/in/nikki-veen/"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></h5>
+              <h5><a href="https://medium.com/@nikkiveen"><i class="fa fa-medium" aria-hidden="true"></i> Blog</a></h5>
+              <h5><a href="https://twitter.com/nikkiveen"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></h5>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 m6 pull-m6 l6 pull-l6">
+  <div class="row">
+    <div class="col s12">
+      <div class="card-panel">
+        <div id="contact-form">
+          <h5 class="center">Contact Me</h5>
+          <%= form_for '/contact', method: :post do %>
+            <div class="input-field">
+              <input type="text" name="name" id="name" class="validate">
+              <label for="name">Name</label>
+            </div>
+            <div class="input-field">
+              <input type="email" name="email" id="email" class="validate">
+              <label for="email" data-error="Please enter valid e-mail address." data-success="">E-mail Address</label>
+            </div>
+            <div class="input-field">
+              <input type="text" name="subject" id="subject" class="validate">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="input-field">
+              <textarea type="text" name="message" id="message" class="validate materialize-textarea"></textarea>
+              <label for="message">Message</label>
+            </div>
+            <div>
+              <button class="btn-floating btn-large right" type="submit" name="action"><i class="material-icons right">send</i></button>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+

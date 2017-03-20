@@ -1,0 +1,26 @@
+@import 'colors';
+
+/**************** CONTACT ****************/
+#contact {
+  margin-top: 50px;
+}
+
+.name, #contact-form h5 {
+  font-weight: 900;
+}
+
+.contact-links a {
+  color: $dk-gray;
+}
+
+.contact-links a:hover {
+  color: $coral;
+}
+
+#contact-form button {
+  background-color: $coral;
+}
+
+#contact-form button:hover {
+  background-color: rgb(255, 131, 130)
+}

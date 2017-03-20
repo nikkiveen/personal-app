@@ -1,0 +1,33 @@
+@import 'colors';
+
+/**************** RESUME ****************/
+#resume {
+  padding-top: 50px;
+}
+
+.resume-header {
+  margin-bottom: -10px;
+}
+
+.employment {
+  margin-bottom: -5px;
+}
+
+#skills, #education, .employment {
+  margin-top: 0;
+}
+
+.employment-details li {
+  font-weight: 200;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#skills li {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#education li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}

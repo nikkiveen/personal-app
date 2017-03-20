@@ -52,6 +52,9 @@
               <textarea type="text" name="message" id="message" class="validate materialize-textarea"></textarea>
               <label for="message">Message</label>
             </div>
+            <div class="input-field">
+              <%= invisible_captcha :phone %>
+            </div>
             <div>
               <button class="btn-floating btn-large right" type="submit" name="action"><i class="material-icons right">send</i></button>
             </div>

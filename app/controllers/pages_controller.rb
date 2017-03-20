@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  invisible_captcha only: [:message], honeypot: :phone, on_spam: :spam_redirect
+
   def home
     render 'home.html.erb'
   end
@@ -19,5 +21,11 @@ class PagesController < ApplicationController
     MessageMailer.new_message(params[:name], params[:email], params[:subject], params[:message]).deliver_now
     flash[:success] = "Thanks for reaching out. I'll be sure to contact you shortly!"
     redirect_to '/contact'
+  end
+
+  private
+
+  def spam_redirect
+    redirect_to '/'
   end
 end

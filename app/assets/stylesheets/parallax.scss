@@ -8,7 +8,7 @@
   color: rgba(255,255,255,.9);
 }
 
-#resume-banner.parallax-container, #contact-banner.parallax-container {
+#resume-banner.parallax-container, #contact-banner.parallax-container, #projects-banner.parallax-container {
   min-height: 280px;
   line-height: 0;
   height: auto;
@@ -25,25 +25,30 @@
   font-weight: 900;
 }
 
+@media only screen and (max-width : 1015px) {
+  #projects-banner #title-box h1 {
+    font-size: 4rem;
+  }
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
   }
-  #index-banner .section, #resume-banner .section, #contact-banner .section {
+  #index-banner .section, #resume-banner .section, #contact-banner .section, #projects-banner .section {
     top: 10%;
   }
 }
 
 @media only screen and (max-width : 895px) {
-  #contact-banner #title-box h1 {
+  #contact-banner #title-box h1{
     font-size: 4rem;
   }
 }
 
 @media only screen and (max-width : 775px) {
-  #resume-banner .section, #contact-banner .section {
+  #resume-banner .section, #contact-banner .section, #projects-banner .section {
     top: 0;
   }
 
@@ -54,10 +59,14 @@
   #contact-banner #title-box h1 {
     font-size: 2.5rem;
   }
+
+  #projects-banner #title-box h1 {
+    font-size: 2.5rem;
+  }
 }
 
 @media only screen and (max-width : 600px) {
-  #index-banner .section, #resume-banner .section {
+  #index-banner .section, #resume-banner .section, #projects-banner .section {
     top: 0;
   }
 
@@ -71,6 +80,10 @@
 
   #contact-banner #title-box h1 {
     font-size: 2rem;
+  }
+
+  #projects-banner #title-box h1 {
+    font-size: 1.8rem;
   }
 }
 
@@ -89,7 +102,7 @@
   background-color: rgba(240, 240, 240, .5);
 }
 
-#resume-banner #title-box, #contact-banner #title-box {
+#resume-banner #title-box, #contact-banner #title-box, #projects-banner #title-box {
   margin-top: 45px;
   width: 40%;
   padding: 10px;

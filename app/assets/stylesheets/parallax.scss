@@ -35,13 +35,24 @@
     top: 10%;
   }
 }
+
+@media only screen and (max-width : 895px) {
+  #contact-banner #title-box h1 {
+    font-size: 4rem;
+  }
+}
+
 @media only screen and (max-width : 775px) {
-#resume-banner .section, #contact-banner .section {
+  #resume-banner .section, #contact-banner .section {
     top: 0;
   }
 
-  #resume-banner #title-box h1, #contact-banner #title-box h1 {
+  #resume-banner #title-box h1 {
     font-size: 3rem;
+  }
+
+  #contact-banner #title-box h1 {
+    font-size: 2.5rem;
   }
 }
 
@@ -54,8 +65,12 @@
     font-size: 3rem;
   }
 
-  #resume-banner #title-box h1, #contact-banner #title-box h1 {
+  #resume-banner #title-box h1 {
     font-size: 2.3rem;
+  }
+
+  #contact-banner #title-box h1 {
+    font-size: 2rem;
   }
 }
 

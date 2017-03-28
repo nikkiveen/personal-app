@@ -9,10 +9,6 @@ class PagesController < ApplicationController
     render 'resume.html.erb'
   end
 
-  def projects
-    render 'projects.html.erb'
-  end
-
   def contact
     render 'contact.html.erb'
   end

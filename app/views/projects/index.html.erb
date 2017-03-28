@@ -6,6 +6,19 @@
   </div>
   <div class="parallax"><img src="<%= image_path('background.jpg') %>" alt="background image"></div>
 </div>
-<div class="container center">
-  <h1 class="ptb-100">Coming Soon...</h1>
+<div id="projects" class="container row pt-40">
+  <% @projects.each do |project| %>
+    <div class="card z-depth-5 col s12">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="<%= image_path(project.images.first.location) %>">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4"><%= project.name %><i class="material-icons right">more_vert</i></span>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4"><%= project.name %><i class="material-icons right">close</i></span>
+        <p><%= project.description %></p>
+      </div>
+    </div>
+  <% end %>
 </div>
